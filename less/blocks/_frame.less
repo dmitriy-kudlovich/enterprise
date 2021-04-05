@@ -1,0 +1,22 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 100px;
+
+    &:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.col {
+    width: 470px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
