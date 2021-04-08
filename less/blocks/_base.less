@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     height: 100%;
@@ -10,16 +14,19 @@ body {
     padding: 0;
 
     font-size: 24px;
+    font-family: "Roboto", sans-serif;
 }
 
 a,
 a:hover {
     text-decoration: none;
-    font-family: inherit;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
 }
 a,
 a:visited {
-    color: inherit;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
 }
 img {
     max-width: 100%;
@@ -46,17 +53,23 @@ ol {
 
 h1 {
     margin-bottom: 40px;
+    font-family: "Oswald", sans-serif;
 }
 
 .img-wrapper {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 section {
     padding: 150px 0 75px 0;
     border-bottom: 1px solid #000;
     text-align: center;
+
+    &:last-child {
+        border-bottom: none;
+    }
 }
 
 .subsection {
@@ -69,8 +82,10 @@ section {
 
 .section__heading {
     margin-bottom: 100px;
+    font-family: "Oswald", sans-serif;
 }
 
 .section__heading--under {
     margin-bottom: 50px;
+    font-family: "Oswald", sans-serif;
 }

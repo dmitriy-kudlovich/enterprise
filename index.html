@@ -5,7 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lorem Ipsum</title>
-        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"
+        />
         <link
             rel="stylesheet"
             href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
@@ -14,6 +22,11 @@
             rel="stylesheet"
             href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+        />
+        <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
         <header class="header">
@@ -23,28 +36,26 @@
                         <a href="index.html" class="nav__link">Logo</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#!" class="nav__link">Lorem</a>
+                        <a href="#about" class="nav__link">Об организации</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#!" class="nav__link">Lorem</a>
+                        <a href="#need" class="nav__link"
+                            >Направления деятельности</a
+                        >
                     </li>
                     <li class="nav__list-item">
-                        <a href="#!" class="nav__link">Lorem</a>
+                        <a href="#product" class="nav__link">Продукция</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#!" class="nav__link">Lorem</a>
+                        <a href="#customers" class="nav__link"
+                            >Потенциальные потребители</a
+                        >
                     </li>
                     <li class="nav__list-item">
-                        <a href="#!" class="nav__link">Lorem</a>
+                        <a href="#offer" class="nav__link">Что мы предлагаем</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#!" class="nav__link">Lorem</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a href="#!" class="nav__link">Lorem</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a href="#!" class="nav__link">Lorem</a>
+                        <a href="#footer" class="nav__link">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -63,7 +74,7 @@
         </header>
         <main class="main">
             <div class="container">
-                <section class="about">
+                <section class="about" id="about">
                     <h2 class="section__heading">About</h2>
                     <div class="row">
                         <div class="col">
@@ -124,7 +135,34 @@
                         </div>
                     </div>
                 </section>
-                <section class="product">
+
+                <section class="need" id="need">
+                    <h2 class="section__heading">
+                        Поребность в нашей продукции
+                    </h2>
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="section__heading--under">График 1</h3>
+                            <div class="img-wrapper">
+                                <img
+                                    src="./img/need/diagram.png"
+                                    alt="diagram"
+                                />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3 class="section__heading--under">График 2</h3>
+                            <div class="img-wrapper">
+                                <img
+                                    src="./img/need/diagram.png"
+                                    alt="diagram"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="product" id="product">
                     <h2 class="section__heading">Our product</h2>
                     <div class="subsection product__desc">
                         <h3 class="section__heading--under">Product</h3>
@@ -137,16 +175,129 @@
                     </div>
                     <div class="subsection product__models">
                         <h3 class="section__heading--under">Models</h3>
+                        <div class="owl-carousel" id="models">
+                            <a
+                                data-fancybox="gallery"
+                                class="photo-frame"
+                                href="./img/product/product.png"
+                            >
+                                <img
+                                    src="./img/product/product.png"
+                                    alt="product"
+                                    class="model__photo"
+                                />
+                            </a>
+                            <a
+                                data-fancybox="gallery"
+                                class="photo-frame"
+                                href="./img/product/product.png"
+                            >
+                                <img
+                                    src="./img/product/product.png"
+                                    alt="product"
+                                    class="model__photo"
+                                />
+                            </a>
+                            <a
+                                data-fancybox="gallery"
+                                class="photo-frame"
+                                href="./img/product/product.png"
+                            >
+                                <img
+                                    src="./img/product/product.png"
+                                    alt="product"
+                                    class="model__photo"
+                                />
+                            </a>
+                            <a
+                                data-fancybox="gallery"
+                                class="photo-frame"
+                                href="./img/product/product.png"
+                            >
+                                <img
+                                    src="./img/product/product.png"
+                                    alt="product"
+                                    class="model__photo"
+                                />
+                            </a>
+                            <a
+                                data-fancybox="gallery"
+                                class="photo-frame"
+                                href="./img/product/product.png"
+                            >
+                                <img
+                                    src="./img/product/product.png"
+                                    alt="product"
+                                    class="model__photo"
+                                />
+                            </a>
+                            <a
+                                data-fancybox="gallery"
+                                class="photo-frame"
+                                href="./img/product/product.png"
+                            >
+                                <img
+                                    src="./img/product/product.png"
+                                    alt="product"
+                                    class="model__photo"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="customers" id="customers">
+                    <h2 class="section__heading">Potential customers</h2>
+                    <div class="img-wrapper">
+                        <img src="./img/customers/map.png" alt="map" />
+                        <div class="map-dot kol"></div>
+                        <div class="map-dot laes"></div>
+                    </div>
+                </section>
+
+                <section class="offer" id="offer">
+                    <h2 class="section__heading">Что мы предлагаем</h2>
+                    <div class="timeline">
+                        <div class="timeline__item timeline__item--quality">
+                            <div class="timeline__text">
+                                <p>100% качество выполненных работ</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item timeline__item--material">
+                            <div class="timeline__text">
+                                <p>
+                                    Использование только качественных материалов
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline__item timeline__item--individual">
+                            <div class="timeline__text">
+                                <p>Индивидуальный подход к каждому клиенту</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item timeline__item--best-prise">
+                            <div class="timeline__text">
+                                <p>Лучшие цены на рынке</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item timeline__item--guarantee">
+                            <div class="timeline__text">
+                                <p>15 лет гарантийного обслуживания</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
         </main>
-        <footer class="footer">
-            <div class="container"></div>
+        <footer class="footer" id="footer">
+            <div class="container">
+                <h2 class="section__heading">Контакты</h2>
+            </div>
         </footer>
 
         <script src="./libs/jquery/jquery.js"></script>
         <script src="./libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>
