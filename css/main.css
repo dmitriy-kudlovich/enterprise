@@ -250,6 +250,10 @@ video {
 .potential {
   padding: 133px 0 190px 0;
 }
+.img--diagram1 {
+  position: relative;
+  top: 45px;
+}
 #models .owl-dot {
   margin-right: 7px;
   width: 20px;
