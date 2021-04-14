@@ -1,5 +1,5 @@
 .product {
-  padding: 133px 0 40px 0;
+  padding: 133px 0 102px 0;
 }
 
 .product__models {
@@ -10,4 +10,41 @@
   &::after {
     width: 100%;
   }
+}
+
+.safety {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #44aae9;
+
+    z-index: 2;
+
+    transition: width 0.2s;
+  }
+}
+
+.safety:hover {
+  &::after {
+    width: 100%;
+  }
+}
+
+.safety h3 {
+  margin: 0;
+  color: #44aae9;
+}
+
+.safety:hover .tip {
+  display: block;
 }

@@ -141,6 +141,38 @@ video {
   -webkit-transition: width 0.2s;
   transition: width 0.2s;
 }
+.tip {
+  display: none;
+  padding: 10px;
+  position: absolute;
+  bottom: 40px;
+  width: 650px;
+  text-align: left;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 8px 0px #323232;
+  box-shadow: 0px 0px 8px 0px #323232;
+  z-index: 3;
+}
+.tip::after {
+  content: "";
+  position: absolute;
+  /* Абсолютное позиционирование */
+  left: 10px;
+  bottom: -39px;
+  /* Положение треугольника */
+  border: 20px solid transparent;
+  border-top: 20px solid #fff;
+  z-index: 3;
+}
+.tip__list {
+  padding-left: 30px;
+}
+.tip__list li {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,7 +280,7 @@ video {
   text-shadow: 0px 0px 50px #fafafa;
 }
 .potential {
-  padding: 133px 0 190px 0;
+  padding: 133px 0 200px 0;
 }
 .img--diagram1 {
   position: relative;
@@ -323,13 +355,41 @@ video {
   content: "Кольская АЭС";
 }
 .product {
-  padding: 133px 0 40px 0;
+  padding: 133px 0 102px 0;
 }
 .product__models {
   margin-bottom: 85px;
 }
 .product__img:hover .img__tip::after {
   width: 100%;
+}
+.safety {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+}
+.safety::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #44aae9;
+  z-index: 2;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+}
+.safety:hover::after {
+  width: 100%;
+}
+.safety h3 {
+  margin: 0;
+  color: #44aae9;
+}
+.safety:hover .tip {
+  display: block;
 }
 button {
   position: relative;
