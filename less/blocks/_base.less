@@ -58,8 +58,6 @@ h1 {
 }
 
 .img-wrapper {
-  display: flex;
-  justify-content: center;
   position: relative;
 }
 
@@ -147,5 +145,27 @@ video {
 
   &:hover {
     color: #000;
+  }
+}
+
+.img__tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 35px;
+  font-weight: 700;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #000;
+
+    z-index: 2;
+
+    transition: width 0.2s;
   }
 }
