@@ -302,11 +302,16 @@ ul li {
   text-shadow: 0px 0px 50px #fafafa;
 }
 .potential {
-  padding: 133px 0 200px 0;
+  padding: 133px 0 50px 0;
 }
 .img--diagram1 {
   position: relative;
   top: 45px;
+}
+.potential--ul {
+  padding-top: 60px;
+  padding-left: 30px;
+  font-size: 16px;
 }
 .demo {
   padding-bottom: 117px;
@@ -370,9 +375,8 @@ button::after {
 button:hover::after {
   width: 100%;
 }
-.img--buy-pay {
-  margin: 0 auto;
-  width: 300px;
+.buysell {
+  padding-bottom: 50px;
 }
 .timeline {
   position: relative;
