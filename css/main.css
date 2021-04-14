@@ -54,7 +54,7 @@ h1 {
   position: relative;
 }
 section {
-  padding: 150px 0 75px 0;
+  padding: 133px 0 75px 0;
   border-bottom: 1px solid #000;
   text-align: center;
 }
@@ -104,6 +104,7 @@ section:last-child {
 }
 video {
   display: block;
+  margin: 0 auto;
   outline: none;
   width: 1000px;
   border: none;
@@ -286,73 +287,8 @@ video {
   position: relative;
   top: 45px;
 }
-#models .owl-dot {
-  margin-right: 7px;
-  width: 20px;
-  height: 20px;
-  background-color: #eaeaea;
-  border-radius: 10px;
-}
-#models .owl-dot:focus {
-  outline: none;
-}
-#models .owl-dot:last-child {
-  margin-right: 0;
-}
-#models .owl-dot.active {
-  background-color: #000;
-  border: none;
-  border-radius: 10px;
-  outline: none;
-}
-.fancybox-image {
-  background-color: #fff;
-}
-.owl-stage {
-  margin: 0 auto;
-}
-.map-dot {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background-color: #ff0000;
-  border-radius: 100px;
-}
-.map-dot::after {
-  content: "";
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  left: 50%;
-  top: -19px;
-  background-color: #ff0000;
-  width: 1px;
-  height: 40px;
-}
-.map-dot::before {
-  content: "";
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  left: 50%;
-  top: -50px;
-  width: 210px;
-  z-index: 2;
-}
-.laes {
-  top: 158px;
-  left: 158px;
-}
-.laes::before {
-  content: "Ленинградская АЭС";
-  left: -45px;
-}
-.kol {
-  top: 109px;
-  left: 248px;
-}
-.kol::before {
-  content: "Кольская АЭС";
+.demo {
+  padding-bottom: 117px;
 }
 .product {
   padding: 133px 0 102px 0;
@@ -464,12 +400,12 @@ button:hover::after {
   background-image: url(../img/offer/materials.png);
   background-size: 50px;
 }
-.timeline__item--individual::after {
-  background-image: url(../img/offer/indiv.png);
+.timeline__item--module::after {
+  background-image: url(../img/offer/blocks.png);
   background-size: 70px;
 }
-.timeline__item--best-prise::after {
-  background-image: url(../img/offer/best-prise.png);
+.timeline__item--automat::after {
+  background-image: url(../img/offer/automat.png);
 }
 .timeline__item--guarantee::after {
   background-image: url(../img/offer/guarantee.png);
@@ -484,14 +420,18 @@ button:hover::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 400px;
+  width: 500px;
   min-height: 120px;
   text-align: left;
-  font-size: 36px;
+  font-size: 30px;
+}
+.timeline__item:nth-child(even) p {
+  text-align: right;
 }
 .footer {
   padding: 100px 0;
   background-color: #000;
   color: #fff;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
