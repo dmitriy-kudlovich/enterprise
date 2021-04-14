@@ -39,17 +39,14 @@
         <ul class="nav__list">
           <li class="nav__list-item">
             <a href="index.html" class="nav__link">
-              <img src="./img/logo.png" alt="logo" width="196" />
+              <img src="./img/logo.png" alt="logo" width="115" />
             </a>
           </li>
           <li class="nav__list-item">
-            <a href="#about" class="nav__link">Об организации</a>
+            <a href="#potential" class="nav__link">Потенциал рынка</a>
           </li>
           <li class="nav__list-item">
-            <a href="#need" class="nav__link">Поребность в нашей продукции</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#product" class="nav__link">Продукция</a>
+            <a href="#product" class="nav__link">Выпускаемая продукция</a>
           </li>
           <li class="nav__list-item">
             <a href="#customers" class="nav__link">Потенциальные потребители</a>
@@ -112,166 +109,70 @@
     </header>
     <main class="main">
       <div class="container">
-        <section class="about" id="about">
-          <h2 class="section__heading">Об организации</h2>
+        <section class="potential" id="potential">
+          <h2 class="section__heading">Потенциал рынка</h2>
+          <h3 class="section__heading--under">
+            На <span class="underline">1 000 000</span> увеличилось количество
+            легковых автомобилей за 1 год
+          </h3>
           <div class="row">
             <div class="col">
-              <div class="img-wrapper">
-                <img src="./img/about/pic-1.jpg" alt="pic" />
-              </div>
-            </div>
-            <div class="col">
-              <div class="about__desc">
-                <p class="about__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Obcaecati eaque illum similique molestiae magnam possimus
-                  ullam consequatur nihil officiis inventore voluptas quia
-                  molestias, perferendis laudantium iusto asperiores doloribus
-                  adipisci laborum?
-                </p>
-                <p class="about__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Obcaecati eaque illum similique molestiae magnam possimus
-                  ullam consequatur nihil officiis inventore voluptas quia
-                  molestias, perferendis laudantium iusto asperiores doloribus
-                  adipisci laborum?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row row--row-reverse">
-            <div class="col">
-              <div class="img-wrapper">
-                <img src="./img/about/pic-2.jpg" alt="pic" />
-              </div>
-            </div>
-            <div class="col">
-              <div class="about__desc">
-                <p class="about__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Obcaecati eaque illum similique molestiae magnam possimus
-                  ullam consequatur nihil officiis inventore voluptas quia
-                  molestias, perferendis laudantium iusto asperiores doloribus
-                  adipisci laborum?
-                </p>
-                <p class="about__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Obcaecati eaque illum similique molestiae magnam possimus
-                  ullam consequatur nihil officiis inventore voluptas quia
-                  molestias, perferendis laudantium iusto asperiores doloribus
-                  adipisci laborum?
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="need" id="need">
-          <h2 class="section__heading">Поребность в нашей продукции</h2>
-          <div class="row">
-            <div class="col">
-              <h3 class="section__heading--under">
-                Планируемая динамика продаж подземной модели, шт.
-              </h3>
+              <p class="img--title">
+                Динамика обеспеченности населения собственными легковыми
+                автомобилями за 2015-2020 гг. (на 1000 человек)
+              </p>
               <div class="img-wrapper">
                 <img src="./img/need/sales.jpg" alt="sales" />
               </div>
             </div>
             <div class="col">
-              <h3 class="section__heading--under">
-                Планируемая динамика продаж наземной модели, шт.
-              </h3>
+              <p class="img--title">
+                Динамика объёма рынка автостоянок <br />за 2015-2020 гг.
+              </p>
               <div class="img-wrapper">
-                <img
-                  src="./img/need/sales_add-model.jpg"
-                  alt="sales_add-model"
-                />
+                <img src="./img/need/sales.jpg" alt="sales" />
               </div>
             </div>
           </div>
         </section>
 
         <section class="product" id="product">
-          <h2 class="section__heading">Наш продукт</h2>
-          <div class="subsection product__desc">
-            <h3 class="section__heading--under">
-              Автоматизированный комплекс парковки автотранспорта
-            </h3>
-            <div class="img-wrapper">
-              <img src="./img/product/product.jpeg" alt="product" />
+          <h2 class="section__heading">Выпускаемая продукция</h2>
+
+          <h3 class="section__heading--under">
+            Автоматизированный комплекс парковки автотранспорта
+          </h3>
+
+          <div class="row product__models">
+            <div class="col">
+              <a
+                data-fancybox="gallery"
+                class="photo-frame"
+                href="./img/product/akpa.png"
+              >
+                <img
+                  src="./img/product/akpa.png"
+                  alt="product"
+                  class="model__photo"
+                />
+              </a>
             </div>
-          </div>
-          <!-- <div class="subsection product__models">
-            <h3 class="section__heading--under">Models</h3>
-            <div class="owl-carousel" id="models">
+            <div class="col">
               <a
                 data-fancybox="gallery"
                 class="photo-frame"
-                href="./img/product/product.png"
+                href="./img/product/akpa-solar.jpg"
               >
                 <img
-                  src="./img/product/product.png"
-                  alt="product"
-                  class="model__photo"
-                />
-              </a>
-              <a
-                data-fancybox="gallery"
-                class="photo-frame"
-                href="./img/product/product.png"
-              >
-                <img
-                  src="./img/product/product.png"
-                  alt="product"
-                  class="model__photo"
-                />
-              </a>
-              <a
-                data-fancybox="gallery"
-                class="photo-frame"
-                href="./img/product/product.png"
-              >
-                <img
-                  src="./img/product/product.png"
-                  alt="product"
-                  class="model__photo"
-                />
-              </a>
-              <a
-                data-fancybox="gallery"
-                class="photo-frame"
-                href="./img/product/product.png"
-              >
-                <img
-                  src="./img/product/product.png"
-                  alt="product"
-                  class="model__photo"
-                />
-              </a>
-              <a
-                data-fancybox="gallery"
-                class="photo-frame"
-                href="./img/product/product.png"
-              >
-                <img
-                  src="./img/product/product.png"
-                  alt="product"
-                  class="model__photo"
-                />
-              </a>
-              <a
-                data-fancybox="gallery"
-                class="photo-frame"
-                href="./img/product/product.png"
-              >
-                <img
-                  src="./img/product/product.png"
+                  src="./img/product/akpa-solar.jpg"
                   alt="product"
                   class="model__photo"
                 />
               </a>
             </div>
-          </div> -->
+          </div>
+
+          <button class="section__heading--under button">Системы безопасности АКПА</и>
         </section>
 
         <section class="customers" id="customers">
