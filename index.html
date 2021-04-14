@@ -52,6 +52,12 @@
             <a href="#demo" class="nav__link">Демонстрация работы</a>
           </li>
           <li class="nav__list-item">
+            <a href="#profit" class="nav__link">Планируемая прибыль</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#buysell" class="nav__link">Поставщики и клиенты</a>
+          </li>
+          <li class="nav__list-item">
             <a href="#offer" class="nav__link">Преимущества устройства</a>
           </li>
           <li class="nav__list-item">
@@ -211,7 +217,56 @@
 
         <section class="demo" id="demo">
           <h2 class="section__heading">Демонстрация работы</h2>
-          <video src="./video/demo.mp4" controls="controls"></video>
+          <!-- <video src="https://youtu.be/GLqa8asYWYg" controls="controls"></video> -->
+          <iframe
+            src="https://youtu.be/GLqa8asYWYg"
+            frameborder="0"
+            width="1000"
+            height="500"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <section class="buysell" id="buysell">
+          <h2 class="section__heading">Поставщики и клиенты</h2>
+
+          <div class="row">
+            <div class="col">
+              <h3 class="section__heading--under">Наши поставщики</h3>
+              <div class="img-wrapper">
+                <img
+                  src="./img/buypay/supply.png"
+                  alt="supply"
+                  width="300"
+                  class="block-center"
+                />
+              </div>
+              <div class="ul-wrapper">
+                <ul class="block-center">
+                  <li>ООО "Центр"</li>
+                  <li>ООО "Все инструменты"</li>
+                  <li>ООО «ТЕХНИКА ГРУПП»</li>
+                  <li>Комус</li>
+                  <li>ООО "Компания Бест Мебелик"</li>
+                  <li>ООО "ВЕЛЕС"</li>
+                  <li>Мой Главбух</li>
+                  <li>ПрофКлининг 24</li>
+                  <li>ЧОП "Квантор-Е-Сторч"</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <h3 class="section__heading--under">Наши клиенты</h3>
+              <div class="img-wrapper">
+                <img
+                  src="./img/buypay/indiv.png"
+                  alt="product"
+                  width="300"
+                  class="block-center"
+                />
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="offer" id="offer">
