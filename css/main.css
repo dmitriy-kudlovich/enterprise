@@ -485,6 +485,9 @@ input[type="submit"] {
     margin-bottom: 85px;
   }
 }
+.fancybox-content {
+  background-color: #fff;
+}
 .product__img:hover .img__tip::after {
   width: 100%;
 }
@@ -647,11 +650,11 @@ button:hover::after {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 14%;
+  left: 45px;
   width: 5px;
   background-color: #808080;
 }
-@media (min-width: 1400px) {
+@media (min-width: 798px) {
   .timeline::after {
     left: 50%;
   }
@@ -672,7 +675,7 @@ button:hover::after {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  left: 15%;
+  left: 45px;
   top: 50%;
   width: 80px;
   height: 80px;
@@ -683,7 +686,7 @@ button:hover::after {
   box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
   z-index: 3;
 }
-@media (min-width: 1400px) {
+@media (min-width: 798px) {
   .timeline__item {
     padding-left: 0;
   }
@@ -727,16 +730,23 @@ button:hover::after {
   min-height: 105px;
   text-align: left;
 }
-@media (min-width: 1400px) {
+@media (min-width: 798px) {
   .timeline__text {
-    width: 500px;
+    width: 42%;
     min-height: 120px;
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 @media (min-width: 1400px) {
+  .timeline__text {
+    width: 500px;
+    font-size: 30px;
+  }
+}
+@media (min-width: 798px) {
   .timeline__item:nth-child(even) p {
     text-align: right;
+    width: 100%;
   }
 }
 .footer {

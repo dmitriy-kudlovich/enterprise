@@ -5,12 +5,12 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 14%;
+    left: 45px;
     width: 5px;
     background-color: #808080;
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 798px) {
     &::after {
       left: 50%;
     }
@@ -30,7 +30,7 @@
     display: block;
     position: absolute;
     transform: translate(-50%, -50%);
-    left: 15%;
+    left: 45px;
     top: 50%;
     width: 80px;
     height: 80px;
@@ -43,7 +43,7 @@
     z-index: 3;
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 798px) {
     padding-left: 0;
 
     &:nth-child(odd) {
@@ -95,16 +95,21 @@
   min-height: 105px;
   text-align: left;
 
+  @media (min-width: 798px) {
+    width: 42%;
+    min-height: 120px;
+    font-size: 22px;
+  }
+
   @media (min-width: 1400px) {
     width: 500px;
-    min-height: 120px;
-
     font-size: 30px;
   }
 }
 
 .timeline__item:nth-child(even) p {
-  @media (min-width: 1400px) {
+  @media (min-width: 798px) {
     text-align: right;
+    width: 100%;
   }
 }
