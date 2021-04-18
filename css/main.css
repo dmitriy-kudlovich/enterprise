@@ -566,10 +566,16 @@ button:hover::after {
   margin-bottom: 0;
 }
 .nav--mobile__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-bottom: 40px;
-}
-.nav--mobile__logo img {
-  margin: 0 auto;
 }
 .cross {
   position: absolute;
