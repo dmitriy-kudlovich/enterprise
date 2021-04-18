@@ -1,6 +1,18 @@
 .footer {
-  padding: 100px 0;
+  padding: 65px 0;
   background-color: #000;
   color: #fff;
   text-align: center;
+
+  @media (min-width: 1400px) {
+    padding: 100px 0;
+    height: unset;
+  }
+}
+
+.footer .img-wrapper {
+  display: none;
+  @media (min-width: 1400px) {
+    display: block;
+  }
 }
