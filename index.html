@@ -17,23 +17,91 @@
     />
     <link
       rel="stylesheet"
-      href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div class="hamburger-wrapper">
+      <div class="hamburger" id="hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </div>
+    </div>
+    <div class="nav--mobile" id="navMobile">
+      <div class="cross"></div>
+      <div class="container">
+        <ul class="nav--mobile__list">
+          <li class="nav--mobile__list-item">
+            <a href="index.html" class="nav--mobile__link nav--mobile__logo">
+              <img src="./img/logo.png" alt="logo" width="115" />
+            </a>
+          </li>
+          <li class="nav--mobile__list-item">
+            <a href="#potential" class="nav--mobile__link">Потенциал рынка</a>
+          </li>
+          <li class="nav--mobile__list-item">
+            <a href="#product" class="nav--mobile__link"
+              >Выпускаемая продукция</a
+            >
+          </li>
+          <li class="nav--mobile__list-item">
+            <a href="#demo" class="nav--mobile__link">Демонстрация работы</a>
+          </li>
+
+          <li class="nav--mobile__list-item">
+            <a href="#buysell" class="nav--mobile__link"
+              >Поставщики и клиенты</a
+            >
+          </li>
+          <li class="nav--mobile__list-item">
+            <a href="#offer" class="nav--mobile__link"
+              >Преимущества устройства</a
+            >
+          </li>
+        </ul>
+
+        <div class="row contacts">
+          <a class="contact-link" href="tel:88000010201">
+            <div
+              class="row row--left row--vertical-center contact-link__content"
+            >
+              <span class="material-icons material-icons-outlined"> call </span>
+              &nbsp;
+              <p>8 (800) 001 02 01</p>
+            </div>
+          </a>
+
+          <a class="contact-link" href="email:avto_dom_serv@rambler.ru">
+            <div
+              class="row row--left row--vertical-center contact-link__content"
+            >
+              <span class="material-icons material-icons-outlined">
+                email
+              </span>
+              &nbsp;
+              <p>avto_dom_serv@rambler.ru</p>
+            </div>
+          </a>
+
+          <a
+            class="contact-link"
+            href="https://dmitriy-kudlovich.github.io/enterprise/"
+          >
+            <div
+              class="row row--left row--vertical-center contact-link__content"
+            >
+              <span class="material-icons material-icons-outlined">
+                language
+              </span>
+              &nbsp;
+              <p>www.avtodom.ru</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
     <header class="header">
       <nav class="header__nav">
         <ul class="nav__list">
@@ -72,7 +140,9 @@
 
           <div class="row contacts">
             <a class="contact-link" href="tel:88000010201">
-              <div class="row row--left row--vertical-center">
+              <div
+                class="row row--left row--vertical-center contact-link__content"
+              >
                 <span class="material-icons material-icons-outlined">
                   call
                 </span>
@@ -82,7 +152,9 @@
             </a>
 
             <a class="contact-link" href="email:avto_dom_serv@rambler.ru">
-              <div class="row row--left row--vertical-center">
+              <div
+                class="row row--left row--vertical-center contact-link__content"
+              >
                 <span class="material-icons material-icons-outlined">
                   email
                 </span>
@@ -95,7 +167,9 @@
               class="contact-link"
               href="https://dmitriy-kudlovich.github.io/enterprise/"
             >
-              <div class="row row--left row--vertical-center">
+              <div
+                class="row row--left row--vertical-center contact-link__content"
+              >
                 <span class="material-icons material-icons-outlined">
                   language
                 </span>
@@ -105,13 +179,13 @@
             </a>
           </div>
 
-          <div class="img-wrapper">
+          <div class="img-wrapper none">
             <img src="./img/qr-code.gif" alt="qr-code" class="inline-block" />
           </div>
         </div>
       </div>
     </header>
-    <main class="main">
+    <main class="main none">
       <div class="container">
         <section class="potential" id="potential">
           <h2 class="section__heading">Потенциал рынка</h2>
@@ -230,7 +304,6 @@
 
         <section class="demo" id="demo">
           <h2 class="section__heading">Демонстрация работы</h2>
-          <!-- <video src="./video/demo.mp4" controls="controls"></video> -->
           <div class="video">
             <iframe
               width="560"
@@ -282,7 +355,7 @@
         </section>
       </div>
     </main>
-    <footer class="footer" id="footer">
+    <footer class="footer none" id="footer">
       <div class="container">
         <h2 class="section__heading">Контакты</h2>
 
@@ -324,10 +397,6 @@
         </div>
       </div>
     </footer>
-
-    <script src="./libs/jquery/jquery.js"></script>
-    <script src="./libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

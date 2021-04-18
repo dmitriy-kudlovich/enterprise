@@ -12,9 +12,18 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 
-  font-size: 24px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
+}
+
+body {
+  position: relative;
 }
 
 a,
@@ -47,8 +56,23 @@ ol {
 }
 
 .container {
+  max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
-  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  // Медиазапрос для планшетов
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1200px) {
+    padding-left: unset;
+    padding-right: unset;
+  }
 }
 
 h1 {
@@ -94,7 +118,9 @@ section {
 }
 
 .contacts {
-  margin-bottom: 50px;
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .contact-link {
@@ -214,4 +240,12 @@ video {
 
 ul li {
   text-align: left;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="submit"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
